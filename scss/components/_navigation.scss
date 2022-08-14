@@ -1,0 +1,20 @@
+@use '../general/variables' as v;
+
+.navigation {
+    @media (min-width: 1024px) {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    &__item {
+        @media (min-width: 1024px) {
+            font-size: 18px;
+            line-height: 1.2;
+        }
+    } 
+
+    &__item-text {
+        color: v.$dark-blue;
+        text-decoration: none;
+    }
+}

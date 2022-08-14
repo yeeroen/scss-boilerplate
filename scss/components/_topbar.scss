@@ -1,0 +1,26 @@
+// We start the file name with '_', because it will be imported inside of the main file
+// Only the main file doesn't start with '_'.
+
+.topbar {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(#023E8A, 0.2);;
+
+    // This is to select '.topbar__inner' the '&' sign adds the '.topbar' from above.
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 40px;
+
+        @media (min-width: 1024px) {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+    }
+
+    &__navigation-icon {
+        width: 28px;
+        height: 20px;
+    }
+}

@@ -1,0 +1,57 @@
+.topbar {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(2, 62, 138, 0.2);
+}
+.topbar__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+}
+@media (min-width: 1024px) {
+  .topbar__inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+}
+.topbar__navigation-icon {
+  width: 28px;
+  height: 20px;
+}
+
+@media (min-width: 1024px) {
+  .navigation {
+    display: flex;
+    column-gap: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .navigation__item {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+.navigation__item-text {
+  color: #03045E;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .desktop {
+    display: none;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Weekly Dilemma</title>
+</head>
+<body>
+    <!-- Topbar is a component on itself, you can reuse it at different places. -->
+    <div class="topbar">
+        <div class="topbar__inner">
+            <img src="./images/logo.svg" alt="" class="topbar__logo">
+            <!-- Navigation too, since it has it's own functionality. -->
+            <!-- It would also just become hard to name if we still had it under the topbar name -->
+            <nav class="navigation desktop">
+                <div class="navigation__item">
+                    <a class="navigation__item-text" href="#">Home</a>
+                </div>
+                <div class="navigation__item">
+                    <a class="navigation__item-text" href="#">Submit dilemma</a>
+                </div>
+                <div class="navigation__item">
+                    <a class="navigation__item-text" href="#">About us</a>
+                </div>
+                <div class="navigation__item">
+                    <a class="navigation__item-text" href="#">Contact us</a>
+                </div>
+            </nav>
+            <svg class="topbar__navigation-icon mobile" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="0.666666" width="28" height="3.93333" rx="1.96667" fill="#023E8A"/>
+                <rect y="8.53334" width="28" height="3.93333" rx="1.96667" fill="#023E8A"/>
+                <rect y="16.4" width="28" height="3.93333" rx="1.96667" fill="#023E8A"/>
+            </svg>
+                
+        </div>
+    </div>
+</body>
+</html>

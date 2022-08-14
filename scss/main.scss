@@ -1,0 +1,16 @@
+// This is the main style sheet, everything comes together here.
+
+// With @forward we make sure that the topbar file gets compiled too.
+@forward './components/topbar';
+@forward './components/navigation';
+
+@forward './general/responsive';
+
+// Simple reset script, you can always add more,
+// or even create a '_reset.scss' file and import it here. 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
